@@ -1,27 +1,63 @@
-# WowEdt
+# Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+I have created this application using Angular 6, Node, and Express.js. There are two separate components, the front-end and back-end. This application utilizes the new Blizzard Dev Api (https://develop.battle.net).
 
-## Development server
+  
+# Instructions and Installation
+1. This application will require Angular CLI and Node.js and npm to run locally. Node can be downloaded at https://nodejs.org/en/. Angular CLI can be installed with the following commad:
+```sh
+$ npm install -g @angular/cli
+```
+2. Unzip the project files (there will be two directories)
+3. Open two terminal/command lines and cd into each of the directories
+```sh
+$ cd wow-edt
+$ cd wow-edt-backend
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4. Run the 'npm install' command in both terminals to install all packages
+```sh
+$ npm install
+```
 
-## Code scaffolding
+5. In the back-end terminal, run 'node server.js' to start the server
+```sh
+$ node server.js
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6. n the front-end terminal, run 'ng serve --open' to open the application in a new browser tab
+```sh
+$ ng serve --open
+```
 
-## Build
+7. Enter a character name and realm name and click 'Search' to see the results. (Tested with character name 'Regex' and realm name 'Dalaran')
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Requirements and Extra's
 
-## Running unit tests
+From the assignment, I have provided the following required character stats:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Level of the character
+- Health
+- Strength
+- Agility
+- Intelligence
+- Stamina
+- Haste
 
-## Running end-to-end tests
+As well as the following additional character stats:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Damage
+- Speed
+- Mana Regen
+- Armor
+- Dodge
+- Parry
+- Block
+- Crit
+- Mastery
+- Leech
+- Versatility
 
-## Further help
+I also provided all of the items (type, name) that were returned from the API response along with their image icon (There is currently to 'price' element for the items).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+All of the images from the Photoshop file were added and styling was made as close to that file as possible. The stats section will show when the search is fired and close when you click on the 'X' icon.
